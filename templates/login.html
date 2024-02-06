@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="/static/style.css" rel="stylesheet">
+</head>
+<body>
+{% extends "navbar.html" %}
+{% block content %}
+
+
+<div id="login">
+<form action="/login" method="POST">
+    Username
+  <input type="text" name="username" required="True"><br>
+    Password
+  <input type="password" name="password" required="True"><br>
+  <input type="submit" value="LOGIN">
+</form>
+</div>
+
+
+{% endblock %}
+</form>
+</body>
+</html>

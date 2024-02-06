@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Draft</title>
+    <link href="/static/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/static/Icon.ico" />
+</head>
+
+<body>
+{% extends "navbar.html" %}
+{% block content %}
+
+<form action="/draft"method="POST" style="text-align:center;" name="draft">
+    <h1 style="font-size:30pt;text-align:center; padding: 20px;"> Write What You Think </h1> <br>
+
+    <input type="text" name="post" style="font-size:18pt;" class="inputbox" required="True">
+
+    <br><br>
+
+
+    <button type="submit" style="padding: 10px;">
+        <img src="/static/upload.png" value="Create Post" style="width: 45px; height: 45px; padding: 3px 4px ;"/>
+    </button>
+</form>
+
+
+{% endblock %}
+
+
+</body>
+</html>

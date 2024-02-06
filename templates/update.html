@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Password</title>
+    <link href="/static/style.css" rel="stylesheet">
+</head>
+<body>
+{% extends "navbar.html" %}
+{% block content %}
+
+
+<h1>Update Password</h1>
+
+<form action="/update" method="POST" id="updateform">
+  Old Password<br> <input type="password" name="password" class="updateformcontent" required="True"><br>
+  New password <br> <input type="password" name="newpassword"class="updateformcontent" required="True"><br>
+  <input type="submit" value="UPDATE" class="updateformcontent">
+</form>
+
+{% endblock %}
+
+</body>
+</html>

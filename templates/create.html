@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account</title>
+    <link href="/static/style.css" rel="stylesheet">
+</head>
+<body>
+{% extends "navbar.html" %}
+{% block content %}
+
+<div id="create">
+<form action="/create"method="POST"  >
+    Username <input type="text" name="username" required="True"><br>
+    Password <input type="password" name="password" required="True"><br>
+    Name <input type="text", name="name" required="True"><br>
+    Age <input type="int", name="age" required="True"><br>
+
+  <input type="submit" value="Create Account">
+</form>
+</div>
+{% endblock %}
+</body>
+</html>

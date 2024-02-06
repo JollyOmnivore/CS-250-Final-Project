@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Post</title>
+    <script scr="/static/code.js"></script>
+</head>
+<body>
+{% extends "navbar.html" %}
+{% block content %}
+<table id="posts">
+{% for post in posts %}
+   <tr>
+
+       <td class="username">{{post.username}}</td>
+
+   </tr>
+
+    <tr>
+
+        <td class="text">{{post.post}}</td>
+
+    </tr>
+{%endfor%}
+
+</table>
+<form method="POST" style="text-align:center;">
+    <h1 style="font-size:15pt;text-align:center;"> Edit Your Post </h1> <br>
+
+    <input type="text" name="newpost" style="font-size:18pt;" class="inputbox" required="True">
+
+    <br>
+
+    <button type="submit">
+        <img src="/static/upload.png" value="Create Post" style="width: 50px;"/>
+    </button>
+</form>
+
+
+{% endblock %}
+
+
+</body>
+</html>

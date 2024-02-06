@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link href="/static/style.css" rel="stylesheet">
+</head>
+<body>
+{% extends "navbar.html" %}
+{% block content %}
+
+<table id="posts">
+{% for post in posts %}
+   <tr>
+
+       <td class="username">{{post.username}}</td>
+
+   </tr>
+
+    <tr>
+
+        <td class="text">{{post.post}}</td>
+
+    </tr>
+    <tr>
+        <td><a class="edit" href="/edit/{{post.id}}"> Edit</a><a class="edit" href="/delete/{{post.id}}" style="padding: 10px;"> Delete </a></td>
+
+
+    </tr>
+
+{%endfor%}
+{% endblock %}
+</table>
+</body>
+
+</html>

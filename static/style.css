@@ -1,0 +1,93 @@
+
+nav {
+    text-align:center;
+      outline: white solid 10px;
+      background: white;
+}
+
+nav a {
+    font-size: 40px;
+    padding: 40px;
+
+}
+
+body{
+background-color: #90E0F7;
+}
+
+#posts {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+
+}
+.username{
+    font-size: 30px;
+    color: blue;
+    font-weight: bold
+    padding: 20px;
+
+}
+
+.text{
+    color: green;
+    padding: 20px;
+    font-size: 20px;
+
+}
+.edit{
+
+}
+
+#userinfo{
+    background-color: #90E0F7;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    font-size: 40px;
+ }
+#userheader{
+    padding: 20px;
+}
+
+#userdata{
+    padding: 20px;
+}
+
+h1 {
+  text-align:center;
+}
+h2 {
+  text-align:center;
+}
+#updateform{
+    font-size: 30px;
+    padding: 20px;
+}
+.updateformcontent{
+    font-size: 30px;
+
+}
+form {
+    max-width: 64em;
+    margin: auto;
+    text-align: center;
+    }
+#create{
+  font-size: 30px;
+    padding: 20px;
+}
+#login {
+
+  font-size: 30px;
+    padding: 20px;
+
+}
+.inputbox {
+padding: 0 300px 300px 0;
+}
+
+table {
+  border-spacing: 10px;
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="/static/style.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+{% if loggedin %}
+<nav class="nav">
+    <a href="/">Home</a>
+    <a href="/view_all">Active Users</a>
+    <a href="/profile">Profile</a>
+    <a href="/update">Update Password</a>
+    <a href="/logout">Logout</a>
+    <a href="/draft">Draft</a>
+    <a href="/chatroom">Timeline</a>
+</nav>
+
+{% else %}
+
+<nav class="nav">
+
+  <a href="/">Home</a>
+  <a href="/login">Login</a>
+  <a href="/create">Create Account</a>
+</nav>
+
+{% endif %}
+
+{%block content %}
+{% endblock %}
+</body>
+</html>

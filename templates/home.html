@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <script scr="/static/code.js"></script>
+</head>
+<body>
+<script>
+
+var count = 5;
+function changeImage() {
+    var image = document.getElementById('funnyfish');
+    var link =  document.getElementById('fishlink');
+        if (image.src.match("/static/fish.gif")) {
+            alert("You Found it press OK to continue")
+            count++
+            if (count >= 5){
+                link.href = "/secret";
+            }
+        }
+}
+
+
+</script>
+{% extends "navbar.html" %}
+{% block content %}
+<h1 style="font-size: 130px;">Welcome to Reel</h1>
+<h2>The only real social media platform</h2>
+<a href="" id="fishlink"><img src="/static/fish.gif" value="Create Post" style="width: 600px;padding: 40px; display: block; margin-left: auto;margin-right: auto;" onclick="changeImage()" id="funnyfish"/></a>
+
+
+
+    {% endblock %}
+</body>
+</html>
